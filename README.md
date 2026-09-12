@@ -139,10 +139,18 @@ An interactive, responsive dashboard featuring:
 
 ## 3. How to Run and Use
 
-### Prerequisites
+### Live Cloud Deployment
+The interactive dashboard is publicly hosted on Render and ready to use without local installation:
+- **Live Application URL:** [https://machine-degradation-predictor.onrender.com/](https://machine-degradation-predictor.onrender.com/)
+
+---
+
+### Local Installation
+
+#### Prerequisites
 - Python 3.10 to 3.12 installed.
 
-### Step 1: Clone the Repository
+#### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/alfiinyang/machine-degradation-predictor.git
 cd machine-degradation-predictor

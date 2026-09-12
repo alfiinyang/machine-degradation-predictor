@@ -174,9 +174,11 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("#### 🔗 Production Links")
+    st.markdown("- [Live Web App (Render)](https://machine-degradation-predictor.onrender.com/)")
     st.markdown("- [Hugging Face Model Hub](https://huggingface.co/alfiinyang/GBdegradation)")
     st.markdown("- [GitHub Repository](https://github.com/alfiinyang/machine-degradation-predictor)")
     st.caption("FMN AI Internship — Project 2")
+
 
 
 # -----------------------------------------------------------------------------
