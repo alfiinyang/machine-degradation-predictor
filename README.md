@@ -207,9 +207,11 @@ machine-degradation-predictor/
 
 ## 5. Limitations & Future Work
 
-1. **Remaining Useful Life (RUL) Regression:** Currently, the system predicts failure probability over a defined forward horizon. With longer run-to-failure datasets (e.g. NASA C-MAPSS or multi-year plant history), survival analysis (Weibull models) or direct RUL regression could estimate remaining operating hours.
-2. **Lack of Dynamic Data Lookup / Tool Calling:** The conversational interface currently constructs prompts from pre-aggregated in-memory fleet context rather than equipping the LLM with an autonomous tool/function-calling layer (e.g., SQL/vector queries) to look up granular sensor telemetry on demand for specific machines, shifts, or anomaly intervals.
-3. **Prompt Loading Overhead & Token RPM Consumption:** Injecting multi-asset operational state tables directly into system prompts inflates the token payload per user query. This increases input prompt latency and heightens the risk of exhausting Requests Per Minute (RPM) and Tokens Per Minute (TPM) rate limits during concurrent or extended conversational sessions.
-4. **Automated CMMS Integration:** Automatically dispatching work orders to computerized maintenance management systems (SAP PM / Maximo) upon critical risk detection.
-5. **Local SLM Edge Deployment:** Quantizing a lightweight model (e.g., Gemma 2 2B) for on-premise edge hardware to generate explanations in disconnected plant environments.
+1. **Failure Data Scarcity & Class Imbalance:** Real-world failure events in industrial manufacturing are naturally rare, creating severe class imbalance during training. Collecting more historical failure telemetry or generating realistic synthetic failure sequences (e.g. via Time-Series GANs or SMOTE) will provide a more balanced training distribution and enhance precision without sacrificing 100% recall.
+2. **Remaining Useful Life (RUL) Regression:** Currently, the system predicts failure probability over a defined forward horizon. With longer run-to-failure datasets (e.g. NASA C-MAPSS or multi-year plant history), survival analysis (Weibull models) or direct RUL regression could estimate remaining operating hours.
+3. **Lack of Dynamic Data Lookup / Tool Calling:** The conversational interface currently constructs prompts from pre-aggregated in-memory fleet context rather than equipping the LLM with an autonomous tool/function-calling layer (e.g., SQL/vector queries) to look up granular sensor telemetry on demand for specific machines, shifts, or anomaly intervals.
+4. **Prompt Loading Overhead & Token RPM Consumption:** Injecting multi-asset operational state tables directly into system prompts inflates the token payload per user query. This increases input prompt latency and heightens the risk of exhausting Requests Per Minute (RPM) and Tokens Per Minute (TPM) rate limits during concurrent or extended conversational sessions.
+5. **Automated CMMS Integration:** Automatically dispatching work orders to computerized maintenance management systems (SAP PM / Maximo) upon critical risk detection.
+6. **Local SLM Edge Deployment:** Quantizing a lightweight model (e.g., Gemma 2 2B) for on-premise edge hardware to generate explanations in disconnected plant environments.
+
 
