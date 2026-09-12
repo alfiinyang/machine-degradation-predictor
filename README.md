@@ -2,7 +2,10 @@
 
 An interactive industrial predictive maintenance system that forecasts machine failure risks before breakdown, flags critical wear anomalies, and generates data-grounded engineering explanations and conversational Q&A using AI.
 
+Presentation slides are here: [(see slides here)](https://docs.google.com/presentation/d/1FSWLbhVNmv5VGpJUxty-eArpCBssKPZFnhIaIDUm9p4/edit?usp=sharing).
+
 ---
+
 
 ## 1. Problem Understanding
 
@@ -199,6 +202,7 @@ machine-degradation-predictor/
 ├── Project2_manufacturing.ipynb     # Original research, EDA, modeling, and evaluation notebook
 ├── requirements.txt                 # Pinned project dependencies
 ├── render.yaml                      # Render cloud deployment blueprint
+├── FMN Machine Degradation Predictor.pptx # Project presentation slide deck
 ├── .gitignore                       # Git ignore rules
 └── README.md                        # Project documentation
 ```
